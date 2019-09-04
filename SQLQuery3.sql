@@ -59,9 +59,12 @@ FROM myEMPLOYEES A FULL OUTER JOIN mySALARIES B ON A.employee_ID = B.employee_ID
 	FULL OUTER JOIN myPHONES C ON B.employee_ID = C.employee_ID
 	FULL OUTER JOIN myPARKING D ON A.employee_ID = D.employee_ID
 ---END OF FULL OUTER JOIN
+							      
 
----CROSS JOIN
-
+---CROSS JOIN (joining every single rows from multiple tables)
+SELECT * FROM myEMPLOYEES CROSS JOIN mySALARIES
+---or,
+SELECT * FROM myEMPLOYEES, mySALARIES
 
 
 	 
